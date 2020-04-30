@@ -49,7 +49,7 @@
     "uniqCompNum": 69,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/start-with-branding-2.jpg",
     "noImageResize": true,
     "cssOptimize": true,
     "lazyLoad": true,
