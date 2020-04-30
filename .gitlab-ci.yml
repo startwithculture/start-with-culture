@@ -4,7 +4,7 @@ image: python:latest
 
 variables:
   S3_BUCKET: "website-start-with-culture"
-  CF_DISTID: "E2EIHVQ9RIS7EA"
+  CF_DISTID: "EEBOUAS1RV8WG"
 
 stages:
   - deploy
