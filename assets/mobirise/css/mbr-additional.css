@@ -1240,6 +1240,12 @@ hr {
 .cid-rRBIA44EwQ .mbr-section-btn {
   color: #e9204f;
 }
+.cid-rRBIA44EwQ .block-title,
+.cid-rRBIA44EwQ .mbr-section-title,
+.cid-rRBIA44EwQ .line,
+.cid-rRBIA44EwQ .mbr-section-btn {
+  color: #e9204f;
+}
 .cid-s04ICccFwk {
   background-color: #ffffff;
 }
@@ -3108,6 +3114,8 @@ hr {
   }
 }
 .cid-s04SRDipbO {
+  padding-top: 225px;
+  padding-bottom: 225px;
   background-color: #ffffff;
 }
 .cid-s04SRDipbO .mbr-text {
