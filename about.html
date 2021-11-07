@@ -12,7 +12,6 @@
   
   <title>About</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -21,11 +20,14 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
   
   
+
 </head>
 <body>
 
@@ -51,7 +53,11 @@
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
       <div class="container">
         <div class="navbar-brand">
-            
+            <span class="navbar-logo">
+              <a href="index.html">
+                  <img src="assets/images/start-with-culture-black.png" alt="START WITH CULTURE - ORG" style="height: 3.8rem;">
+              </a>
+            </span>
             <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-2" href="index.html">
             START WITH CULTURE</a></span>
         </div>
@@ -64,10 +70,9 @@
             </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                  <a class="nav-link link text-black display-4" href="about.html">
-                      Calls</a>
-              </li><li class="nav-item"><a class="nav-link link text-black display-4" href="about.html">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
+                  <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Projects</a><div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4" href="soulidarity.html">#SOULIDARITY</a><a class="text-black dropdown-item text-primary display-4" href="kulcha-houz.html" aria-expanded="false">kulcha houz</a><a class="text-black dropdown-item display-4" href="#" aria-expanded="false">SWC Talks</a></div>
+              </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="calls.html">Calls</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="about.html">
                       About</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="contact.html">
                       Contact</a></li></ul>
             <div class="icons-menu">
@@ -178,7 +183,7 @@ In 2020 during the global pandemic crisis, the founders of SWC felt the urgent n
                     <div class="card-footer">
                         <div class="mbr-author-name mbr-semibold mbr-fonts-style display-5">Julia Kastl
 </div>
-                        <div class="mbr-author-desc mbr-regular mbr-fonts-style display-7">Founder &amp; Projectmanager, Germany
+                        <div class="mbr-author-desc mbr-regular mbr-fonts-style display-7">Founder &amp; Project Manager, Germany
 </div>
 
                         <div class="social-list">
@@ -233,6 +238,40 @@ In 2020 during the global pandemic crisis, the founders of SWC felt the urgent n
     </div>
 </section>
 
+<section class="vertical-line cid-sO5VYSOLvN" id="contacts2-2n">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="block-wrapper col-md-12 col-lg-12">
+                <div class="social-list">
+                    <a href="https://twitter.com/startwithcultur" target="_blank">
+                        <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                    </a>
+                    <a href="https://facebook.com/startwithcultureorg" target="_blank">
+                        <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                    </a>
+                    <a href="https://instagram.com/startwithcultureorg" target="_blank">
+                        <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                    </a>
+                    <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                        
+                    </a>
+                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                        
+                    </a>
+                </div>
+                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                    Stay in touch!</h2>
+                <div class="mbr-section-btn align-left"><a class="btn btn-danger-outline display-7" href="http://tiny.cc/donate-for-soulidarity" target="_blank">Support our work &amp; donate!</a> <a class="btn btn-danger-outline display-7" href="newsletter.html">Get our Newsletter</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section once="footers" class="cid-s04K6dn24B" id="footer1-6">
 
     
@@ -262,7 +301,7 @@ In 2020 during the global pandemic crisis, the founders of SWC felt the urgent n
 </section>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -272,10 +311,12 @@ In 2020 during the global pandemic crisis, the founders of SWC felt the urgent n
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/sociallikes/social-likes.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
   
   
 <input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgba(234, 239, 241, 0.88)' data-cookie-textButton='Agree' data-cookie-colorButton='#e9204f' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
-  </body>
+  
+</body>
 </html>
