@@ -71,7 +71,7 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "pwa-switcher": false,
-    "uniqCompNum": 104,
+    "uniqCompNum": 105,
     "versionPublish": "5.4.1",
     "screenshot": "screenshot.png",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-167562634-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-167562634-1');\n</script>",
@@ -6204,9 +6204,97 @@
           },
           "_name": "content4",
           "_sourceTheme": "studiom4",
-          "_customHTML": "<section class=\"content4 studiom4_content4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <header>Color</header>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Border Color\" name=\"iconBGColor\" value=\"#ffffff\">\n        <input type=\"image\" name=\"video\" value=\"@PROJECT_PATH@/assets/images/yt-video-trailer-3.png\" title=\"Background Image\">\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://youtu.be/V6zyFj3jBY4\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/man-3.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/94651406\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-12 col-lg-6 m-auto left-block\">\n                <div class=\"media-content\">\n                    <h1 class=\"mbr-section-title align-left mbr-bold mbr-white mbr-fonts-style mbr-black\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">#SOULIDARITY 2020</h1>\n                    <h3 class=\"mbr-section-subtitle mbr-semibold align-left mbr-black mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">July 2020 - December 2020</h3>\n                    <div class=\"mbr-section-text mbr-white\">\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-7\"><i>Raising public interest and collecting donations for African musicians to provide emergency aid have been the nonprofit’s mission with its global campaign in 2020. Supported by Salif Keita and Paulo Flores as ambassadors #SOULIDARITY drew attention to musicians from the African continent who rely on touring and performing. \n</i><br><br>#SOULIDARITY - the biggest fundraising campaign for African musicians during the COVID-19 pandemic. SOULIDARITY” is a campaign specially designed for musicians from the African continent who had to put their careers on hold. It is uncertain by when African musicians will be able to tour again to make a living. Without any financial help, a heart-breaking number of mind-blowing talents will struggle to continue their craft. While artists are always the ambassadors for spreading messages in every crisis, it is now the time to spread the message together for the artists.<br><br></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get Started </a></div>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content4 studiom4_content4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <header>Color</header>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Border Color\" name=\"iconBGColor\" value=\"#ffffff\">\n        <input type=\"image\" name=\"video\" value=\"@PROJECT_PATH@/assets/images/yt-video-trailer-3.png\" title=\"Background Image\">\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://youtu.be/V6zyFj3jBY4\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/man-3.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/94651406\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-12 col-lg-6 m-auto left-block\">\n                <div class=\"media-content\">\n                    <h1 class=\"mbr-section-title align-left mbr-bold mbr-white mbr-fonts-style mbr-black\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">#SOULIDARITY 2020</h1>\n                    <h3 class=\"mbr-section-subtitle mbr-semibold align-left mbr-black mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">September 2020 - December 2020</h3>\n                    <div class=\"mbr-section-text mbr-white\">\n                        <p class=\"mbr-text align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-7\"><i>Raising public interest and collecting donations for African musicians to provide emergency aid have been the nonprofit’s mission with its global campaign in 2020. Supported by Salif Keita and Paulo Flores as ambassadors #SOULIDARITY drew attention to musicians from the African continent who rely on touring and performing. \n</i><br><br>#SOULIDARITY - the biggest fundraising campaign for African musicians during the COVID-19 pandemic. SOULIDARITY” is a campaign specially designed for musicians from the African continent who had to put their careers on hold. It is uncertain by when African musicians will be able to tour again to make a living. Without any financial help, a heart-breaking number of mind-blowing talents will struggle to continue their craft. While artists are always the ambassadors for spreading messages in every crisis, it is now the time to spread the message together for the artists.<br><br></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get Started </a></div>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sO4W3buJpX",
           "_anchor": "content4-23",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".img-box": {
+              "position": "relative"
+            },
+            ".card": {
+              "display": "flex"
+            },
+            ".img1": {
+              "position": "absolute",
+              "bottom": "0",
+              "right": "3rem",
+              "z-index": "1"
+            },
+            ".img2": {
+              "position": "absolute",
+              "top": "0",
+              "left": "3rem",
+              "z-index": "2"
+            },
+            "@media (max-width: 992px)": {
+              ".img1": {
+                "right": "1rem"
+              },
+              ".img2": {
+                "left": "1rem"
+              },
+              ".img-box": {
+                "margin-top": "1rem"
+              },
+              ".text-block": {
+                "text-align": "center"
+              },
+              ".mbr-section-title": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 576px)": {
+              ".card-text": {
+                "display": "flex",
+                "align-items": "center"
+              },
+              ".count": {
+                "padding-right": "16px"
+              },
+              "img": {
+                "width": "60%"
+              },
+              ".card": {
+                "flex-direction": "column",
+                "align-items": "center",
+                "padding": "0 !important"
+              }
+            },
+            "h3, h4": {
+              "margin": "0",
+              "padding": "0"
+            },
+            ".mbr-content-title": {
+              "color": "#e9204f"
+            },
+            "@media (min-width: 767px)": {
+              ".row": {
+                "margin": "0"
+              }
+            }
+          },
+          "_name": "counters1",
+          "_sourceTheme": "studiom4",
+          "_customHTML": "<section class=\"counters1 studiom4_counters1 counters\" roup=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t\t<select title=\"Cards Count\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-md-12 col-lg-5 col-12 m-auto text-block\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-regular pb-3 mbr-fonts-style mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Participation of</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-regular pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h2>\n\t\t\t\t<p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t\t<div class=\"col-lg-7 col-md-12 col-12 align-center img-box\">\n\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t<div class=\"card align-center col-12 col-md-4\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-mobirise mbr-iconfont\"></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t\t<h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t30</h3>\n\t\t\t\t\t\t\t\t<h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".count-title\">\n\t\t\t\t\t\t\t\t\tBands</h4>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card align-center col-12 col-md-4\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-touch-swipe mbr-iconfont\"></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t\t<h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t165</h3>\n\t\t\t\t\t\t\t\t<h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".count-title\">\n\t\t\t\t\t\t\t\t\tMusicians</h4>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"card align-center col-12 col-md-4\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n\t\t\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-text\">\n\t\t\t\t\t\t\t\t<h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t18</h3>\n\t\t\t\t\t\t\t\t<h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".count-title\">\n\t\t\t\t\t\t\t\t\tAfrican countries</h4>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "sO654t5iuA",
+          "_anchor": "counters1-2w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -6447,9 +6535,10 @@
           },
           "_name": "info1",
           "_sourceTheme": "studiom4",
-          "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">\n\t\t\t\t\t#SOULIDARTIY 2022</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "sO5Pk6621m",
-          "_anchor": "info1-29",
+          "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".container-column, h2\">Partners</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "info1-2v",
+          "_isUserblock": true,
+          "_cid": "sO5ZdnxvVA",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -6458,82 +6547,48 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".mbr-text": {
-              "margin-bottom": "3.2rem"
-            },
             "@media (max-width: 767px)": {
-              ".align-center": {
-                "text-align": "center"
+              ".col-sm-6": {
+                "flex": "0 0 33.333333%",
+                "max-width": "33.333333%"
               },
-              ".wrapper": {
-                "padding": "2rem 1rem"
+              ".card": {
+                "margin-bottom": "2rem"
               }
             },
-            ".block-btn": {
-              "display": "flex"
-            },
-            ".mbr-section-subtitle": {
-              "margin-bottom": "2rem"
-            },
-            "h1": {
-              "margin-bottom": "0"
-            },
-            ".wrapper": {
-              "background-color": "@colorBg",
-              "border-radius": "4px"
-            },
-            "@media (min-width: 767px)": {
-              ".container": {
-                "padding": "0 3rem"
-              },
-              ".wrapper": {
-                "padding": "3.8rem 4rem"
-              }
-            },
-            "@media (max-width: 992px)": {
-              ".block-btn": {
-                "justify-content": "center"
-              },
-              ".text-block": {
-                "text-align": "center"
-              },
-              ".mbr-section-title": {
-                "text-align": "center",
+            "@media (min-width: 767px) and (max-width: 992px)": {
+              ".card": {
                 "margin-bottom": "2rem"
               }
             },
             "@media (min-width: 992px)": {
-              ".block-btn": {
-                "justify-content": "flex-end"
-              },
-              ".btn": {
-                "border-radius": "2px",
-                "margin-right": "0rem"
+              ".card-wrapper": {
+                "padding": "0 1.5rem"
               }
             },
-            ".btn-white:hover": {
-              "color": "#ffffff !important",
-              "border-color": "#000000 !important"
+            "@media (min-width: 767px)": {
+              ".row": {
+                "margin": "0"
+              }
             },
-            ".btn-white:hover::before": {
-              "background-color": "#000000 !important"
+            ".container": {
+              "border-top": "1px solid #ebebeb",
+              "padding-top": "2rem"
             }
           },
-          "_name": "content6",
+          "_name": "image2",
           "_sourceTheme": "studiom4",
-          "_customHTML": "<section group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\" class=\"content6 studiom4_content6\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\t\t<header>Block Background</header>\n\t\t<input type=\"color\" title=\"Color\" value=\"#e9204f\" name=\"colorBg\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/team/team5.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row wrapper\">\n\t\t\t<div class=\"col-sm-12 col-md-12 col-lg-6 text-block\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-semibold mbr-fonts-style mbr-white\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">We are looking for partners!</h1>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-semibold mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Festivals, Venues &amp; Media get on board for #SOULIDARITY 2022!</h3>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tBuild your entire site in minutes and customize in real-time</p>\n\t\t\t</div>\n\t\t\t<div class=\"col-sm-12 col-md-12 col-lg-6 block-btn m-auto\">\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white\" href=\"mailto:contact@start-with-culture.org\" data-app-placeholder=\"Type Text\">Contact us for your opportunities!</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "sO4VzgnW56",
-          "_anchor": "content6-20",
+          "_customHTML": "<section class=\"image2 studiom4_image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <header>Additional</header>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/man-3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-sm-6 col-md-2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/songlines-mag.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card  col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/afropfingsten.png\" alt>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/musicinafrica.jpg\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/africa-oye.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 4\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/sauti-za-busara.jpg\" alt>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 5\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/start-with-culture-logo.png\" alt>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sO5XBuXMhQ",
+          "_anchor": "image2-2t",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -6661,10 +6716,9 @@
           },
           "_name": "info1",
           "_sourceTheme": "studiom4",
-          "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">THANKS TO OUR PARTNERS FOR #SOULIDARTIY 2020</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "info1-2v",
-          "_isUserblock": true,
-          "_cid": "sO5ZdnxvVA",
+          "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">\n\t\t\t\t\t#SOULIDARTIY 2022</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "sO5Pk6621m",
+          "_anchor": "info1-29",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -6673,52 +6727,86 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text": {
+              "margin-bottom": "3.2rem"
+            },
             "@media (max-width: 767px)": {
-              ".col-sm-6": {
-                "flex": "0 0 33.333333%",
-                "max-width": "33.333333%"
+              ".align-center": {
+                "text-align": "center"
               },
-              ".card": {
-                "margin-bottom": "2rem"
+              ".wrapper": {
+                "padding": "2rem 1rem"
               }
             },
-            "@media (min-width: 767px) and (max-width: 992px)": {
-              ".card": {
+            ".block-btn": {
+              "display": "flex"
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "2rem"
+            },
+            "h1": {
+              "margin-bottom": "0"
+            },
+            ".wrapper": {
+              "background-color": "@colorBg",
+              "border-radius": "4px"
+            },
+            "@media (min-width: 767px)": {
+              ".container": {
+                "padding": "0 3rem"
+              },
+              ".wrapper": {
+                "padding": "3.8rem 4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".block-btn": {
+                "justify-content": "center"
+              },
+              ".text-block": {
+                "text-align": "center"
+              },
+              ".mbr-section-title": {
+                "text-align": "center",
                 "margin-bottom": "2rem"
               }
             },
             "@media (min-width: 992px)": {
-              ".card-wrapper": {
-                "padding": "0 1.5rem"
+              ".block-btn": {
+                "justify-content": "flex-end"
+              },
+              ".btn": {
+                "border-radius": "2px",
+                "margin-right": "0rem"
               }
             },
-            "@media (min-width: 767px)": {
-              ".row": {
-                "margin": "0"
-              }
+            ".btn-white:hover": {
+              "color": "#ffffff !important",
+              "border-color": "#000000 !important"
             },
-            ".container": {
-              "border-top": "1px solid #ebebeb",
-              "padding-top": "2rem"
+            ".btn-white:hover::before": {
+              "background-color": "#000000 !important"
             }
           },
-          "_name": "image2",
+          "_name": "content6",
           "_sourceTheme": "studiom4",
-          "_customHTML": "<section class=\"image2 studiom4_image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <header>Additional</header>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/man-3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-sm-6 col-md-2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/songlines-mag.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card  col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/afropfingsten.png\" alt>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/musicinafrica.jpg\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/africa-oye.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 4\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/sauti-za-busara.jpg\" alt>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 5\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/start-with-culture-logo.png\" alt>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "sO5XBuXMhQ",
+          "_customHTML": "<section group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\" class=\"content6 studiom4_content6\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\t\t<header>Block Background</header>\n\t\t<input type=\"color\" title=\"Color\" value=\"#e9204f\" name=\"colorBg\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/team/team5.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row wrapper\">\n\t\t\t<div class=\"col-sm-12 col-md-12 col-lg-6 text-block\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-semibold mbr-fonts-style mbr-white\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">We are looking for partners!</h1>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-semibold mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Festivals, Venues &amp; Media get on board for #SOULIDARITY 2022!</h3>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tBuild your entire site in minutes and customize in real-time</p>\n\t\t\t</div>\n\t\t\t<div class=\"col-sm-12 col-md-12 col-lg-6 block-btn m-auto\">\n\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white\" href=\"mailto:contact@start-with-culture.org\" data-app-placeholder=\"Type Text\">Contact us for your opportunities!</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "sO4VzgnW56",
+          "_anchor": "content6-20",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "image2-2t"
+          "_params": {}
         },
         {
           "alias": false,
