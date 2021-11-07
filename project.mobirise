@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "soulidarity.html",
     "theme": {
       "name": "studiom4",
       "title": "StudioM4",
@@ -71,7 +71,7 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "pwa-switcher": false,
-    "uniqCompNum": 100,
+    "uniqCompNum": 104,
     "versionPublish": "5.4.1",
     "screenshot": "screenshot.png",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-167562634-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-167562634-1');\n</script>",
@@ -1082,11 +1082,11 @@
           "_sourceTheme": "studiom4",
           "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">#SOULIDARITY 2022</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">More about the next round with our #SOULIDARITY campaign in the upcoming month.</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-black-outline\" href=\"soulidarity.html\" data-app-placeholder=\"Type Text\">Opportunities!</a></div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "sO5TDjm26W",
+          "_anchor": "info1-2i",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "info1-2i"
+          "_params": {}
         },
         {
           "alias": false,
@@ -6449,11 +6449,11 @@
           "_sourceTheme": "studiom4",
           "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">\n\t\t\t\t\t#SOULIDARTIY 2022</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "sO5Pk6621m",
+          "_anchor": "info1-29",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "info1-29"
+          "_params": {}
         },
         {
           "alias": false,
@@ -6538,6 +6538,187 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 767px)": {
+              "h2": {
+                "margin-bottom": "1rem"
+              },
+              ".wrapper": {
+                "display": "flex",
+                "flex-direction": "column"
+              },
+              ".mbr-section-btn": {
+                "margin-left": "1px",
+                "margin-top": "1rem"
+              },
+              "@media (min-width: 992px)": {
+                ".container-column": {
+                  "text-align": "center"
+                }
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".wrapper": {
+                "display": "flex",
+                "justify-content": "space-between",
+                "padding": "0 1rem"
+              },
+              ".container": {
+                "position": "relative"
+              },
+              "h2": {
+                "margin": "0"
+              }
+            },
+            ".btn": {
+              "margin": "0",
+              "position": "relative",
+              "padding": "0.7rem 2.4rem",
+              "color": "#101010 !important",
+              "border-width": "2px",
+              "letter-spacing": "-0.2px"
+            },
+            "hr": {
+              "width": "40px",
+              "height": "2px",
+              "top": "-2.6rem"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".btn:hover": {
+              "color": "#ffffff !important",
+              "transform": "perspective(1px) translateZ(0)"
+            },
+            ".line-title": {
+              "width": "40px",
+              "height": "2px",
+              "background-color": "@dangerColor",
+              "margin-bottom": "1.2rem",
+              "display": "inline-block"
+            },
+            ".vertical-line": {
+              "&:before": {
+                "content": "''",
+                "background-color": "@dangerColor",
+                "height": "60px",
+                "width": "2px",
+                "position": "absolute",
+                "top": "-30px",
+                "left": "50%"
+              }
+            },
+            ".mbr-section-btn .btn::before": {
+              "content": "''",
+              "position": "absolute",
+              "z-index": "-1",
+              "top": "0",
+              "left": "0",
+              "right": "0",
+              "bottom": "0",
+              "transform": "scaleX(0)",
+              "transform-origin": "0% 50%",
+              "transition-property": "transform",
+              "transition": "0.6s",
+              "transition-timing-function": "cubic-bezier(0.17, 0.67, 0, 1.01)"
+            },
+            ".btn-secondary-outline:hover::before": {
+              "background-color": "@secondaryColor !important"
+            },
+            ".btn-success-outline:hover::before": {
+              "background-color": "@successColor !important"
+            },
+            ".btn-info-outline:hover::before": {
+              "background-color": "@infoColor !important"
+            },
+            ".btn-primary-outline:hover::before": {
+              "background-color": "@primaryColor !important"
+            },
+            ".btn-white-outline:hover::before": {
+              "background-color": "#ffffff !important"
+            },
+            ".btn-black-outline:hover::before": {
+              "background-color": "@warningColor !important"
+            },
+            ".btn-danger-outline:hover::before": {
+              "background-color": "@dangerColor !important"
+            },
+            ".btn:hover::before": {
+              "background-color": "#ffffff",
+              "transform": "scaleX(1)"
+            }
+          },
+          "_name": "info1",
+          "_sourceTheme": "studiom4",
+          "_customHTML": "<section class=\"mbr-section info1 studiom4_info1 vertical-line\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!--Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t\t<input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/man-3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/94651406\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Bg\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" name=\"color2\" title=\"Color 2\" value=\"#2bdc9d\" condition=\"bg.type=='color' && gradientBg\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"wrapper\">\n\t\t\t<div class=\"container-column\">\n\t\t\t\t<div class=\"line-title\" mbr-if=\"showLine\"></div>\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-2\" data-app-selector=\".container-column, h2\">THANKS TO OUR PARTNERS FOR #SOULIDARTIY 2020</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-bold align-left mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">#SOULIDARITY became a movement and continues in 2022 by establishing a strong network of festivals, media partners and venues to help African musicians to restart again!</h3>\n\t\t\t</div>\n\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View All</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "info1-2v",
+          "_isUserblock": true,
+          "_cid": "sO5ZdnxvVA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 767px)": {
+              ".col-sm-6": {
+                "flex": "0 0 33.333333%",
+                "max-width": "33.333333%"
+              },
+              ".card": {
+                "margin-bottom": "2rem"
+              }
+            },
+            "@media (min-width: 767px) and (max-width: 992px)": {
+              ".card": {
+                "margin-bottom": "2rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".card-wrapper": {
+                "padding": "0 1.5rem"
+              }
+            },
+            "@media (min-width: 767px)": {
+              ".row": {
+                "margin": "0"
+              }
+            },
+            ".container": {
+              "border-top": "1px solid #ebebeb",
+              "padding-top": "2rem"
+            }
+          },
+          "_name": "image2",
+          "_sourceTheme": "studiom4",
+          "_customHTML": "<section class=\"image2 studiom4_image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <header>Additional</header>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/man-3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-sm-6 col-md-2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/songlines-mag.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card  col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/afropfingsten.png\" alt>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/musicinafrica.jpg\" alt>\n                    </div>\n\n                </div>\n            </div>\n\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/africa-oye.png\" alt>\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 4\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/sauti-za-busara.jpg\" alt>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-sm-6 col-md-2\" mbr-if=\"cardsAmount > 5\" mbr-class=\"{\n            'col-lg-2': cardsAmount == '6',\n            'col-lg-3': cardsAmount == '4',\n            'col-lg-4': cardsAmount == '3'\n            }\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/start-with-culture-logo.png\" alt>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sO5XBuXMhQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image2-2t"
         },
         {
           "alias": false,
